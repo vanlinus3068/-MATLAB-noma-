@@ -1,12 +1,12 @@
-# NOMA通信系统设计
+# NOMA System Simulator
 
-此项目实现了NOMA（非正交多址接入）通信系统的设计与仿真，基于MATLAB和Python平台，用于研究和验证NOMA技术在无线通信中的性能表现。
+This project implements the design and simulation of NOMA (Non-Orthogonal Multiple Access) communication systems based on MATLAB and Python platforms, used for researching and validating the performance of NOMA technology in wireless communications.
 
-## 项目概述
+## Project Overview
 
-NOMA（Non-Orthogonal Multiple Access）是一种先进的多址接入技术，旨在提高无线通信系统的频谱效率和用户连接数。与传统的正交多址（OMA）技术不同，NOMA允许多个用户在同一资源块（时间和频率）上同时传输，通过功率域复用和接收端的串行干扰消除（SIC）技术实现用户分离。
+NOMA (Non-Orthogonal Multiple Access) is an advanced multiple access technology designed to improve spectral efficiency and the number of user connections in wireless communication systems. Unlike traditional orthogonal multiple access (OMA) technology, NOMA allows multiple users to transmit simultaneously on the same resource block (time and frequency) through power domain multiplexing and serial interference cancellation (SIC) technology at the receiver to achieve user separation.
 
-## 文件说明
+## File Description
 
 - `NOMA.m`: 原始MATLAB实现的NOMA通信系统
 - `rayleigh.m`: MATLAB实现的瑞利衰落信道模型
@@ -14,9 +14,9 @@ NOMA（Non-Orthogonal Multiple Access）是一种先进的多址接入技术，�
 - `noma_system_improved.py`: 改进版的Python实现，包含更完整的功能
 - `README.md`: 项目说明文档
 
-## Python版本特性
+## Python Version Features
 
-Python版本提供了以下改进：
+The Python version provides the following improvements:
 
 1. **完整的模块化设计**: 将系统拆分为多个功能模块，便于理解和维护
 2. **OFDM调制支持**: 实现了完整的OFDM调制和解调流程
@@ -26,9 +26,9 @@ Python版本提供了以下改进：
 6. **SIC接收机**: 实现串行干扰消除算法
 7. **BER性能分析**: 提供详细的误比特率分析
 
-## 运行说明
+## Running Instructions
 
-要运行Python版本，请确保安装了以下依赖：
+To run the Python version, please ensure the following dependencies are installed:
 
 ```bash
 pip install numpy matplotlib scipy
@@ -40,7 +40,7 @@ pip install numpy matplotlib scipy
 python noma_system_improved.py
 ```
 
-## 技术特点
+## Technical Features
 
 - 支持多用户叠加编码与功率分配
 - 接收端采用串行干扰消除（SIC）技术
@@ -48,21 +48,21 @@ python noma_system_improved.py
 - 自定义用户数量、调制方式、信噪比范围
 - 完整的端到端仿真流程
 
-## 应用场景
+## Application Scenarios
 
 - 通信工程研究人员
 - 高校学生学习NOMA技术
 - 无线通信算法开发者
 - 5G/5G+通信系统仿真
 
-## 系统要求
+## System Requirements
 
 - MATLAB R2010a 或更高版本（原版MATLAB代码）
 - Python 3.6 或更高版本（Python版本）
 - NumPy, Matplotlib, SciPy库（Python版本）
 
-## 注意事项
+## Notes
 
-- 本项目主要用于学术仿真和教学演示
-- 仿真参数可以根据具体需求调整
-- Python版本是对MATLAB版本的功能复现和改进
+- This project is mainly used for academic simulation and teaching demonstrations
+- Simulation parameters can be adjusted according to specific requirements
+- The Python version is a functional reproduction and improvement of the MATLAB version
